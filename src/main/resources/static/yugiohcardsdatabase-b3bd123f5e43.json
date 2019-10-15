@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "yugiohcardsdatabase",
+  "private_key_id": "b3bd123f5e43471bace0912ef77aec639d30f31f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQChSTSmnddyu+GZ\nLfVh+O+nJyuYgZ0mTJ6hnbXjphldVaxp4+y4SUdc5gszkmbGjoOEqONDQNNHMrXW\n+XKEkANhBIDhlCSyKHTv2wA2KsoLNXaP44USfLuHOfcxvtF3lKMXvoM8rTOn6Rj3\nLbNA3nqO2FVlmy7G7KPsJ0PvcD4f4Dd2R6tfohcBdcLKXW8YgpF5fQGoN4Mg0pGY\ny4ow7k5alStvkKAOGoPnf6c2vz+eQHyMBvqgKAM73b8RqoNDQrMF7zMSsJLpjKwc\ncXc7buzrPUZVCTDo097+7Hv9qZku6SRkDtB5QMB10bxpVSbmmX+wesEJFgxiXqjZ\ndlh0WMVFAgMBAAECggEAKfokouzX4zu1FqoYgHxK24VdWl75qLsuWj/y1CIp3dnr\nes/gj4I6+ZnB9pU2/Jyg7EkMhTd9Bb3UB/R6crgMuRZz+MIW3uuaq8ajAnYWid5L\nUl3UB6DBKgvTI3ZXjDj6Tba+727gz+XiIosZaVu+KClz6HMANLPoYhFCJDJhaOgH\nDZUlbIqutjnQGq6ZUDspvc9S0fhTWgQMkvuXdAQ0sRoMVyz+Qytb7naR55E2Q5Ya\nhrje+w3X0tIP7O9jAEJAo3UXl7382wLP1H4XIsX7pft2IiOM89xc2+gzifA7Fst/\nb9YOY8AZFpSyb5PCH83ih0cPLRRGkEHTcPgj5tBDbQKBgQDhl2bxgppazqT7djmp\nW8HUacJ0OtO0geh3/PElw4x6wkeRuv7SfgE5A+LDpM/dfjTFR0ibSFxSER63ed3W\ntwE/TA2K4XokcBAtXhVo1BaxwxkOLhlEQI3prIJnjehTGqKEEjI4SiH6VFeJ46BV\nbXBVpiw0gF0nCQIvGcsYpWguBwKBgQC3BshOngm2ZD7kG4g5cL4goNR2cePmW+zt\ng2qxRtSV/tSBVAPNDNcS0ezg9N6Psarwe8nyzXcH69E5SUFdtqp30+kGghWwZFRO\nAaTWi0nJXOUL/PK6yvuzT3yfpz6vMseECesmOjgcWCvpqrq4mINvc79rzGdgBUNE\nDSYrukkfUwKBgQCXQPEXus6NVgIOS/1rTQdPyT1EuvCZFYTtdl2lSVCWOk7MKgmS\nzkM5nB5duNJaGrV9FEddPg4QRERJFl+kB/3BF9f4pydC6RQfpvZJ2/H/a+UPud7d\nAT9lTnH8xovftHsEfELJtQLFGem7nTAyNvdbpdf7t5k9g++/7tZahwSr3wKBgEIH\n9GRIqABhkj8Bn9f5UN68p2pEFJCbQZM/AlMK1s92rHwsL2Le6wkjK27NaS42TxGL\n14P9lKAK9+TPBQImUMICdeOfMuv8hl3OQgYVIn2/QfNdQsUZTk2Ws8N1tyvGCi0c\n1vVns66mMNGQguTuQR0IiVr+15zQyT/X7pmAD7l5AoGBAKo1tUwaTmxJU+DJ72J9\nflYg+7uw2Xfr/poZQf8eZXTX9JAPG6Q8xE5eje1DnJQKMaXnP361Gm9uRhHiHuN3\nMBCJJlACBteCT0uRSXB7skuGyGf5D7AiZgb3SDXVZ6j9HbuohJfxtEZybRaTFwSj\nDegE/1TlkrIFHyP5Q6fLECNQ\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-qpmex@yugiohcardsdatabase.iam.gserviceaccount.com",
+  "client_id": "110566707280010511284",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qpmex%40yugiohcardsdatabase.iam.gserviceaccount.com"
+}
