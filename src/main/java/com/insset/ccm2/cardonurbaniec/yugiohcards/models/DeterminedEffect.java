@@ -2,9 +2,9 @@ package com.insset.ccm2.cardonurbaniec.yugiohcards.models;
 
 public class DeterminedEffect {
 
-    private String typeCard;
+    private FilterCard filterCard;
 
-    private String subTypeCard;
+    private String filterPosition;
 
     private String determinedTypeApplication;
 
@@ -12,20 +12,20 @@ public class DeterminedEffect {
 
     private String targetOfLocation;
 
-    public String getTypeCard() {
-        return typeCard;
+    public FilterCard getFilterCard() {
+        return filterCard;
     }
 
-    public void setTypeCard(String typeCard) {
-        this.typeCard = typeCard;
+    public void setFilterCard(FilterCard filterCard) {
+        this.filterCard = filterCard;
     }
 
-    public String getSubTypeCard() {
-        return subTypeCard;
+    public String getFilterPosition() {
+        return filterPosition;
     }
 
-    public void setSubTypeCard(String subTypeCard) {
-        this.subTypeCard = subTypeCard;
+    public void setFilterPosition(String filterPosition) {
+        this.filterPosition = filterPosition;
     }
 
     public String getDeterminedTypeApplication() {

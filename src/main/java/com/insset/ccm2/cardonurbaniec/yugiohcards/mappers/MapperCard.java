@@ -3,6 +3,10 @@ package com.insset.ccm2.cardonurbaniec.yugiohcards.mappers;
 import com.google.cloud.firestore.QueryDocumentSnapshot;
 import com.insset.ccm2.cardonurbaniec.yugiohcards.models.Card;
 import com.insset.ccm2.cardonurbaniec.yugiohcards.models.Effect;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.AttributeType;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CardSubType;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CardType;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CategorizedType;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -10,7 +14,7 @@ import java.util.List;
 @Component
 public class MapperCard {
 
-    public Card mapDocumentToCard(QueryDocumentSnapshot document){
+    public Card mapDocumentToCard(QueryDocumentSnapshot document) {
         Card card = new Card();
 
         if (document.contains("reference")) {
@@ -22,19 +26,19 @@ public class MapperCard {
         }
 
         if (document.contains("cardType")) {
-            card.setCardType(document.getString("cardType"));
+            card.setCardType(CardType.valueOf(document.getString("cardType")));
         }
 
         if (document.contains("cardSubType")) {
-            card.setCardSubType(document.getString("cardSubType"));
+            card.setCardSubType(CardSubType.valueOf(document.getString("cardSubType")));
         }
 
         if (document.contains("categorized")) {
-            card.setCategorized(document.getString("categorized"));
+            card.setCategorized(CategorizedType.valueOf(document.getString("categorized")));
         }
 
         if (document.contains("attribute")) {
-            card.setAttribute(document.getString("attribute"));
+            card.setAttribute(AttributeType.valueOf(document.getString("attribute")));
         }
 
         if (document.contains("description")) {
@@ -59,6 +63,10 @@ public class MapperCard {
 
         if (document.contains("effects")) {
             card.setEffects((List<Effect>) document.get("effects"));
+        }
+
+        if (document.contains("limit")) {
+            card.setLimit(document.getLong("limit").intValue());
         }
 
         return card;

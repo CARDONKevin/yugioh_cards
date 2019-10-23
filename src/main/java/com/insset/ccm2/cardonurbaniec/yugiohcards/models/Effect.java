@@ -1,8 +1,10 @@
 package com.insset.ccm2.cardonurbaniec.yugiohcards.models;
 
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.EffectType;
+
 public class Effect {
 
-    private String action;
+    private EffectType action;
 
     private String quota;
 
@@ -14,13 +16,27 @@ public class Effect {
 
     private String target;
 
+    private int costPv;
+
+    private int costPvPercent;
+
+    private boolean isAutoActivable;
+
+    private boolean isAlwaysActivable;
+
+    private boolean isPassive;
+
+    private String whenIsActivable;
+
+    private FilterCard filter;
+
     private DeterminedEffect determinedEffect;
 
-    public String getAction() {
+    public EffectType getAction() {
         return action;
     }
 
-    public void setAction(String action) {
+    public void setAction(EffectType action) {
         this.action = action;
     }
 
@@ -70,5 +86,61 @@ public class Effect {
 
     public void setDeterminedEffect(DeterminedEffect determinedEffect) {
         this.determinedEffect = determinedEffect;
+    }
+
+    public boolean isAutoActivable() {
+        return isAutoActivable;
+    }
+
+    public void setAutoActivable(boolean autoActivable) {
+        isAutoActivable = autoActivable;
+    }
+
+    public boolean isAlwaysActivable() {
+        return isAlwaysActivable;
+    }
+
+    public void setAlwaysActivable(boolean alwaysActivable) {
+        isAlwaysActivable = alwaysActivable;
+    }
+
+    public boolean isPassive() {
+        return isPassive;
+    }
+
+    public void setPassive(boolean passive) {
+        isPassive = passive;
+    }
+
+    public FilterCard getFilter() {
+        return filter;
+    }
+
+    public void setFilter(FilterCard filter) {
+        this.filter = filter;
+    }
+
+    public String getWhenIsActivable() {
+        return whenIsActivable;
+    }
+
+    public void setWhenIsActivable(String whenIsActivable) {
+        this.whenIsActivable = whenIsActivable;
+    }
+
+    public int getCostPv() {
+        return costPv;
+    }
+
+    public void setCostPv(int costPv) {
+        this.costPv = costPv;
+    }
+
+    public int getCostPvPercent() {
+        return costPvPercent;
+    }
+
+    public void setCostPvPercent(int costPvPercent) {
+        this.costPvPercent = costPvPercent;
     }
 }

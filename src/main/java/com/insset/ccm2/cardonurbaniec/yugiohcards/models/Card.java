@@ -1,5 +1,10 @@
 package com.insset.ccm2.cardonurbaniec.yugiohcards.models;
 
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.AttributeType;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CardSubType;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CardType;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CategorizedType;
+
 import java.util.List;
 
 public class Card {
@@ -8,13 +13,13 @@ public class Card {
 
     private String name;
 
-    private String cardType;
+    private CardType cardType;
 
-    private String cardSubType;
+    private CardSubType cardSubType;
 
-    private String categorized;
+    private CategorizedType categorized;
 
-    private String attribute;
+    private AttributeType attribute;
 
     private String description;
 
@@ -23,6 +28,8 @@ public class Card {
     private int def;
 
     private int level;
+
+    private int limit;
 
     private List<Effect> effects;
 
@@ -44,35 +51,35 @@ public class Card {
         this.name = name;
     }
 
-    public String getCardType() {
+    public CardType getCardType() {
         return cardType;
     }
 
-    public void setCardType(String cardType) {
+    public void setCardType(CardType cardType) {
         this.cardType = cardType;
     }
 
-    public String getCardSubType() {
+    public CardSubType getCardSubType() {
         return cardSubType;
     }
 
-    public void setCardSubType(String cardSubType) {
+    public void setCardSubType(CardSubType cardSubType) {
         this.cardSubType = cardSubType;
     }
 
-    public String getCategorized() {
+    public CategorizedType getCategorized() {
         return categorized;
     }
 
-    public void setCategorized(String categorized) {
+    public void setCategorized(CategorizedType categorized) {
         this.categorized = categorized;
     }
 
-    public String getAttribute() {
+    public AttributeType getAttribute() {
         return attribute;
     }
 
-    public void setAttribute(String attribute) {
+    public void setAttribute(AttributeType attribute) {
         this.attribute = attribute;
     }
 
@@ -122,5 +129,13 @@ public class Card {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public int getLimit() {
+        return limit;
+    }
+
+    public void setLimit(int limit) {
+        this.limit = limit;
     }
 }
