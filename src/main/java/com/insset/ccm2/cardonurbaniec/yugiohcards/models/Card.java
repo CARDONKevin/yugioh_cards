@@ -35,6 +35,12 @@ public class Card {
 
     private String imageUrl;
 
+    private List<FilterCard> needMonster;
+
+    private boolean canHaveUnlimitedMaterial;
+
+    private List<FilterCard> unlimitedMaterial;
+
     public String getReference() {
         return reference;
     }
@@ -137,5 +143,29 @@ public class Card {
 
     public void setLimit(int limit) {
         this.limit = limit;
+    }
+
+    public List<FilterCard> getNeedMonster() {
+        return needMonster;
+    }
+
+    public void setNeedMonster(List<FilterCard> needMonster) {
+        this.needMonster = needMonster;
+    }
+
+    public boolean isCanHaveUnlimitedMaterial() {
+        return canHaveUnlimitedMaterial;
+    }
+
+    public void setCanHaveUnlimitedMaterial(boolean canHaveUnlimitedMaterial) {
+        this.canHaveUnlimitedMaterial = canHaveUnlimitedMaterial;
+    }
+
+    public List<FilterCard> getUnlimitedMaterial() {
+        return unlimitedMaterial;
+    }
+
+    public void setUnlimitedMaterial(List<FilterCard> unlimitedMaterial) {
+        this.unlimitedMaterial = unlimitedMaterial;
     }
 }

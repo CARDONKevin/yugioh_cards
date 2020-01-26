@@ -2,6 +2,8 @@ package com.insset.ccm2.cardonurbaniec.yugiohcards.models;
 
 import com.insset.ccm2.cardonurbaniec.yugiohcards.types.EffectType;
 
+import java.util.List;
+
 public class Effect {
 
     private EffectType action;
@@ -31,6 +33,14 @@ public class Effect {
     private FilterCard filter;
 
     private DeterminedEffect determinedEffect;
+
+    private DeScore deScore;
+
+    private PieceScore pieceScore;
+
+    private List<MultipleDeScore> multipleDeScores;
+
+    private List<MultiplePieceScore> multiplePieceScores;
 
     public EffectType getAction() {
         return action;
@@ -142,5 +152,37 @@ public class Effect {
 
     public void setCostPvPercent(int costPvPercent) {
         this.costPvPercent = costPvPercent;
+    }
+
+    public DeScore getDeScore() {
+        return deScore;
+    }
+
+    public void setDeScore(DeScore deScore) {
+        this.deScore = deScore;
+    }
+
+    public PieceScore getPieceScore() {
+        return pieceScore;
+    }
+
+    public void setPieceScore(PieceScore pieceScore) {
+        this.pieceScore = pieceScore;
+    }
+
+    public List<MultipleDeScore> getMultipleDeScores() {
+        return multipleDeScores;
+    }
+
+    public void setMultipleDeScores(List<MultipleDeScore> multipleDeScores) {
+        this.multipleDeScores = multipleDeScores;
+    }
+
+    public List<MultiplePieceScore> getMultiplePieceScores() {
+        return multiplePieceScores;
+    }
+
+    public void setMultiplePieceScores(List<MultiplePieceScore> multiplePieceScores) {
+        this.multiplePieceScores = multiplePieceScores;
     }
 }
