@@ -3,6 +3,7 @@ package com.insset.ccm2.cardonurbaniec.yugiohcards.mappers;
 import com.google.cloud.firestore.QueryDocumentSnapshot;
 import com.insset.ccm2.cardonurbaniec.yugiohcards.models.Card;
 import com.insset.ccm2.cardonurbaniec.yugiohcards.models.Effect;
+import com.insset.ccm2.cardonurbaniec.yugiohcards.models.FilterCard;
 import com.insset.ccm2.cardonurbaniec.yugiohcards.types.AttributeType;
 import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CardSubType;
 import com.insset.ccm2.cardonurbaniec.yugiohcards.types.CardType;
@@ -34,11 +35,19 @@ public class MapperCard {
         }
 
         if (document.contains("categorized")) {
-            card.setCategorized(CategorizedType.valueOf(document.getString("categorized")));
+            try {
+                card.setCategorized(CategorizedType.valueOf(document.getString("categorized")));
+            } catch (Exception e) {
+                // Nothing
+            }
         }
 
         if (document.contains("attribute")) {
-            card.setAttribute(AttributeType.valueOf(document.getString("attribute")));
+            try {
+                card.setAttribute(AttributeType.valueOf(document.getString("attribute")));
+            } catch (Exception e) {
+                // Nothing
+            }
         }
 
         if (document.contains("description")) {
@@ -67,6 +76,18 @@ public class MapperCard {
 
         if (document.contains("limit")) {
             card.setLimit(document.getLong("limit").intValue());
+        }
+
+        if (document.contains("needMonster")) {
+            card.setNeedMonster((List<FilterCard>) document.get("needMonster"));
+        }
+
+        if (document.contains("canHaveUnlimitedMaterial")) {
+            card.setCanHaveUnlimitedMaterial(document.getBoolean("canHaveUnlimitedMaterial"));
+        }
+
+        if (document.contains("unlimitedMaterial")) {
+            card.setUnlimitedMaterial((List<FilterCard>) document.get("unlimitedMaterial"));
         }
 
         return card;
