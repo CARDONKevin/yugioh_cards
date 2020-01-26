@@ -35,11 +35,19 @@ public class MapperCard {
         }
 
         if (document.contains("categorized")) {
-            card.setCategorized(CategorizedType.valueOf(document.getString("categorized")));
+            try {
+                card.setCategorized(CategorizedType.valueOf(document.getString("categorized")));
+            } catch (Exception e) {
+                // Nothing
+            }
         }
 
         if (document.contains("attribute")) {
-            card.setAttribute(AttributeType.valueOf(document.getString("attribute")));
+            try {
+                card.setAttribute(AttributeType.valueOf(document.getString("attribute")));
+            } catch (Exception e) {
+                // Nothing
+            }
         }
 
         if (document.contains("description")) {
