@@ -28,6 +28,8 @@ public class Effect {
 
     private boolean isPassive;
 
+    private boolean flip;
+
     private String whenIsActivable;
 
     private FilterCard filter;
@@ -184,5 +186,13 @@ public class Effect {
 
     public void setMultiplePieceScores(List<MultiplePieceScore> multiplePieceScores) {
         this.multiplePieceScores = multiplePieceScores;
+    }
+
+    public boolean isFlip() {
+        return flip;
+    }
+
+    public void setFlip(boolean flip) {
+        this.flip = flip;
     }
 }
